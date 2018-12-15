@@ -9,8 +9,10 @@ window.addEventListener('click', function() {
 });
 
 alexa.addEventListener('result', function(event){
-    console.dir(event);
+    console.dir(event.results[0[0].transcript]);
+
 });
 alexa.addEventListener('end', function(event){
     document.body.innerHTML = 'koniec nasluchiwania'
+
 })
